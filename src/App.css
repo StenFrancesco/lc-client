@@ -1,0 +1,17 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(40, 19, 73);
+  color: lightgrey;
+}
+
+.banner {
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to top, rgb(40, 19, 73), #000000);
+  color: lightgrey;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+
