@@ -16,7 +16,6 @@ import Settings from "./pages/Settings"
 import { useDispatch, useSelector } from "react-redux";
 import { selectAppLoading } from "./store/appState/selectors";
 import { getUserWithStoredToken } from "./store/user/actions";
-import { Jumbotron, Nav } from "react-bootstrap";
 import { selectToken } from "../src/store/user/selectors"
 
 function App() {
