@@ -1,10 +1,10 @@
-import { FETCH_CHARACTERS_SUCCESS } from "./actions"
+import { FETCH_ASSIGNEDITEMS_SUCCESS } from "./actions"
 
 const initialState = [];
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_CHARACTERS_SUCCESS:
+    case FETCH_ASSIGNEDITEMS_SUCCESS:
       return action.payload;
 
     default:
