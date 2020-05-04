@@ -1,0 +1,1 @@
+export const selectAssignedItems = state => state.assigneditems
