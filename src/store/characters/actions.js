@@ -14,7 +14,7 @@ export const fetchCharacters = () => {
   return async (dispatch, getState) => {
     try {
       const response = await axios.get(`${apiUrl}/chars`)
-      console.log(response)
+      console.log("characterresponse is", response)
       dispatch(fetchCharactersSuccess(response.data.allCharacters))
     } catch (error) {
       console.error(error.message)

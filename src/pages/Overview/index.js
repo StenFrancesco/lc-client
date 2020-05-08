@@ -24,12 +24,10 @@ export default function Overview() {
   useEffect(() => {
     dispatch(fetchCharacters())
   }, [dispatch])
-  console.log("characters are: ", characters)
 
   useEffect(() => {
     dispatch(fetchAssignedItems())
   }, [dispatch])
-  console.log("assignedItems are: ", assignedItems)
 
   return (
     <div>
