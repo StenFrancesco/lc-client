@@ -1,5 +1,7 @@
 ![LOGO](https://github.com/StenFrancesco/lc-client/blob/master/docs/logo.png)
 
+// This project is still in progress //
+
 ## Table of contents:
 
 - **[Overview](#overview)**
