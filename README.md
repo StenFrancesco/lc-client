@@ -23,10 +23,36 @@ The Lootcouncil app will help the leadership of a guild or an organized pick up 
 
 ## User stories
 
+- Admin can assign characters to subadmins
+- User can search for item in database
+- Admin and subadmin can assign items to characters using Drag and Drop
+- User can make wishlist for character
+- Admin and subadmin can see wishlist of character
+- User can see in character sheet what they have already received
+- User can see in character sheet what they will receive
+- Admin and subadmin can accept invites to guild/group
+- User can search for guild/group to apply to
+
 ## Data model
 
 ![DATAMODEL_LC](https://github.com/StenFrancesco/lc-client/blob/master/docs/datamodel_lc.png)
 
 ## Technologies used
 
+- ReactJS
+- Redux
+- React Drag and Drop
+- React Search Autocomplete
+- React Bootstrap
+- Axios
+- Express
+- REST API
+- Sequelize
+- PostgreSQL
+- NodeJS
+
 ## Server
+
+Link to backend:
+
+[lc-server](https://github.com/StenFrancesco/lc-server)
