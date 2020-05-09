@@ -1,5 +1,4 @@
 import React, { useState, useCallback, useEffect } from 'react'
-import ReactDOM from "react-dom"
 import { useDispatch, useSelector } from "react-redux"
 import Dustbin from "../../components/Dustbin"
 import Box from "../../components/Box"
@@ -17,8 +16,6 @@ export default function Assign() {
   const items = useSelector(selectItems)
   const [render, setRender] = useState(false)
   const [itemName, setItemName] = useState("")
-
-
   const handleOnSearch = (string, cached) => {
     console.log(string, cached);
   }
@@ -38,18 +35,11 @@ export default function Assign() {
   }, [dispatch])
 
   const [dustbins, setDustbins] = useState([
-    { accepts: [ItemTypes.GLASS], lastDroppedItem: null },
-    { accepts: [ItemTypes.FOOD], lastDroppedItem: null },
-    {
-      accepts: [ItemTypes.PAPER, ItemTypes.GLASS], lastDroppedItem: null
-    },
-    { accepts: [ItemTypes.PAPER], lastDroppedItem: null },
+    { accepts: [ItemTypes.ITEM], lastDroppedItem: null }
   ])
   console.log(itemName.name)
   const [boxes] = useState([
-    { name: `test`, type: ItemTypes.GLASS },
-    { name: 'Banana', type: ItemTypes.FOOD },
-    { name: 'Magazine', type: ItemTypes.PAPER },
+    { name: `item`, type: ItemTypes.ITEM }
   ])
   const [droppedBoxNames, setDroppedBoxNames] = useState([])
   function isDropped(boxName) {
@@ -74,7 +64,7 @@ export default function Assign() {
     [droppedBoxNames, dustbins],
   )
 
-  const Test = () => {
+  const DustBinContainer = () => {
     return (
       <Container>
         <div style={{ overflow: 'hidden', clear: 'both' }}>
@@ -106,11 +96,7 @@ export default function Assign() {
   return (
 
     <div>
-      {render ? <Test /> : null}
-
-
-
-
+      {render ? <DustBinContainer /> : null}
       <p>Assign</p>
       <div className="App">
         <div style={{ width: 400, margin: 20 }}>
