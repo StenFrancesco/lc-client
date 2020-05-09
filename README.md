@@ -1,44 +1,32 @@
-# Frontend template
-
-This is a simple react/redux/jwt template to start a project quickly
+![LOGO](https://github.com/StenFrancesco/lc-client/blob/master/docs/logo.png)
 
 ## Table of contents:
 
-- **[Setup](#setup-how-to-use-this-template)**
-- **[Create React App docs](#cra-docs)**
+- **[Overview](#overview)**
+- **[User stories](#user-stories)**
+- **[Data model](#data-model)**
+- **[Technologies used](#technologies-used)**
+- **[Server](#server)**
 
-## SETUP How to use this template
+## Overview
 
-1. Create a new project based on this template using the `Use this template` button
+In World of Warcraft Classic, there is no in-game loot system catered to automatically handing out certain gear/items that drop from bosses in raids/dungeons. In order to tackle this issue, guilds or premade groups use different systems:
 
-![HOW_TO_USE](https://user-images.githubusercontent.com/20372832/77003323-70966180-695d-11ea-8abe-b362d57135f3.gif)
+- Rolling: every person who wants it rolls a random 1-100, highest wins
+- DKP, Dragon Kill Points: People get to bid with the attendance points accumulated over multiple events
+- Loot Council: A fixed group of leadership assigns the dropped item to a specific person. This is decided using several parameters:
+  -- person wants the item and has already stated this to leadership
+  -- person can have the item and use it for their current talent specialization
+  -- person has not received any item for x amount of time
 
-2. Clone the app
+The Lootcouncil app will help the leadership of a guild or an organized pick up group (PUG) handing out items, in order for this to go faster during an event, and for clarity amongst the people attending.
 
-```
-git clone git@github.com:YOUR_GITHUB_NAME/YOUR_PROJECT_NAME.git
-```
+## User stories
 
-3. cd into your project
-
-```
-cd YOUR_PROJECT_NAME
-```
-
-4. install dependencies
-
-```
-npm install
-```
-
-5. Start development server with npm start
-
-```
-npm start
-```
-
-## CRA docs
-
-The normal Create React App docs can be found in [CRA_DOCS.md](./CRA_DOCS.md)
+## Data model
 
 ![DATAMODEL_LC](https://github.com/StenFrancesco/lc-client/blob/master/docs/datamodel_lc.png)
+
+## Technologies used
+
+## Server
