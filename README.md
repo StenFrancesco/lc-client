@@ -40,3 +40,5 @@ npm start
 ## CRA docs
 
 The normal Create React App docs can be found in [CRA_DOCS.md](./CRA_DOCS.md)
+
+![DATAMODEL_LC](https://github.com/StenFrancesco/lc-client/docs/datamodel_lc.png)
