@@ -8,12 +8,15 @@ import Container from "react-bootstrap/Container"
 import { selectItems } from "../../store/items/selectors"
 import { fetchItems } from "../../store/items/actions"
 import { ReactSearchAutocomplete } from "react-search-autocomplete"
+import { fetchCC } from "../../store/classes/actions"
+import { selectCC } from "../../store/classes/selectors"
 
 
 export default function Assign() {
 
   const dispatch = useDispatch()
   const items = useSelector(selectItems)
+  const classes = useSelector(selectCC)
   const [render, setRender] = useState(false)
   const [itemName, setItemName] = useState("")
   const handleOnSearch = (string, cached) => {
@@ -29,6 +32,14 @@ export default function Assign() {
   const handleOnFocus = () => {
     console.log("Focused");
   }
+
+  useEffect(() => {
+    dispatch(fetchCC())
+  }, [dispatch])
+
+  console.log(classes)
+  console.log(items)
+
 
   useEffect(() => {
     dispatch(fetchItems())

@@ -1,0 +1,1 @@
+export const selectCC = state => state.characterclasses
