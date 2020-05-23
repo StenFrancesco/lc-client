@@ -12,6 +12,8 @@ import Items from "./pages/Items"
 import Wishlist from "./pages/Wishlist"
 import Assign from "./pages/Assign"
 import Settings from "./pages/Settings"
+import CharactersByClass from "./components/CharactersByClass"
+import AssignSheet from "./components/AssignSheet"
 
 import { useDispatch, useSelector } from "react-redux";
 import { selectAppLoading } from "./store/appState/selectors";
@@ -41,8 +43,10 @@ function App() {
         <Route path="/overview" component={Overview} />
         <Route path="/items" component={Items} />
         <Route path="/wishlist" component={Wishlist} />
-        <Route path="/assign" component={Assign} />
+        <Route path="/assign" exact component={Assign} />
+        <Route path="/assign/:name" exact component={CharactersByClass} />
         <Route path="/settings" component={Settings} />
+        <Route path="/assign/:name/:id" component={AssignSheet} />
       </Switch>
     </div>
   );

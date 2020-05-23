@@ -10,6 +10,7 @@ import { fetchItems } from "../../store/items/actions"
 import { ReactSearchAutocomplete } from "react-search-autocomplete"
 import { fetchCC } from "../../store/classes/actions"
 import { selectCC } from "../../store/classes/selectors"
+import CharacterClass from "../../components/Classes"
 
 
 export default function Assign() {
@@ -131,6 +132,11 @@ export default function Assign() {
             autoFocus
           />
         </div>
+      </div>
+      <div>
+        {classes.map((classes) => (
+          <CharacterClass key={classes.id} characterclass={classes} />
+        ))}
       </div>
 
     </div>
